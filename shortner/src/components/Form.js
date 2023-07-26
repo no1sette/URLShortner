@@ -35,12 +35,11 @@ class Form extends React.Component {
     //If the user has input a prefered alias then we use it, if not, we generate one
     //Be sure to change shortkey to your domain
     var generatedKey = nanoid(5);
-    var generatedURL = "shortner-c6954a35addf.herokuapp.com/" + generatedKey;
+    var generatedURL = "https://shortner-op4h.onrender.com/" + generatedKey;
 
     if (this.state.preferedAlias !== "") {
       generatedKey = this.state.preferedAlias;
-      generatedURL =
-        "shortner-c6954a35addf.herokuapp.com/" + this.preferedAlias;
+      generatedURL = "https://shortner-op4h.onrender.com/" + this.preferedAlias;
     }
 
     const db = getDatabase();
@@ -169,7 +168,7 @@ class Form extends React.Component {
             <div className="input-group mb-3">
               <div className="input-group-prepend">
                 <span className="input-group-text">
-                  shortner-c6954a35addf.herokuapp.com/
+                  https://shortner-op4h.onrender.com/
                 </span>
               </div>
               <input
