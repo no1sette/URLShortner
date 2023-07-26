@@ -3,9 +3,9 @@ import firebase_admin
 from firebase_admin import db
 import os
 
-cred_obj = firebase_admin.credentials.Certificate('./ServiceAccountKey.json')
+cred_obj = firebase_admin.credentials.Certificate('etc/secrets/ServiceAccountKey.json')
 default_app = firebase_admin.initialize_app(cred_obj, {
-    'databaseURL': ''
+    'databaseURL': 'https://shortner-6e717-default-rtdb.firebaseio.com/'
 })
 
 app = Flask(__name__, static_folder='./build/static',
