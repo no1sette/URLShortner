@@ -15,4 +15,4 @@ shortner-server/venv1
 shortner-server/app/__pycache__/main.cpython-311.pyc
 shortner/src/firebaseConfig.json
 shortner-server/app/__pycache__
-shortner-server/app/build
+# shortner-server/app/build
